@@ -1,0 +1,49 @@
+.main_container{
+    display: flex;
+    width: 100%;
+    .sidebar{
+        width: 200px;
+        display: block;
+        position: fixed;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        height: 100%;
+        overflow-y: visible;
+        border-right: 1px solid #ddd;
+        --scrollbarBG: #fff;
+        --thumbBG: #2796d338;
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+        link{
+            color: #959595;
+        }
+    }
+    .sidebar::-webkit-scrollbar {
+        width: 11px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+    }
+    main>.main_content{
+        margin-left: 200px;
+        height: 100%;
+    }
+    .logout_button{
+        border: 0px;
+        gap: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+        padding-left: 20px;
+        color: #836f6f;
+        background: transparent;
+        text-align: left;
+        &>svg{
+            color: #20ade4;
+        }
+    }
+}

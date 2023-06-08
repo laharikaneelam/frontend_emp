@@ -1,0 +1,131 @@
+  .modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    max-height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    animation: slide-down 300ms ease-out forwards;
+    padding-top: 0;
+  }
+  .modalContainer header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    margin: 0;
+    background: #fff;
+    color: #2796d3;
+    box-shadow: 12px 1px 8px #ddd;
+    /* position: fixed;
+    width: 100%;
+    background-color: #ddd;
+    left: 0;
+    top: 0; */
+  }
+  .modalContainer .title {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+  
+  .titleCloseBtn {
+    display: block;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: inherit;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    border: none;
+    background: transparent;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    /* flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* font-size: 1.7rem; */
+    text-align: center;
+    overflow-y: scroll;
+    padding: 25px 0px;
+    /* padding-top: 50px; */
+  }
+  .modalContainer .body {
+    --scrollbarBG: #fff;
+    --thumbBG: #2796d338;
+  }
+  .modalContainer .body::-webkit-scrollbar {
+    width: 11px;
+  }
+  .modalContainer .body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  .modalContainer .body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  .modalContainer .body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

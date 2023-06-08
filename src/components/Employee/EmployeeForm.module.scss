@@ -1,0 +1,115 @@
+.emp_frm_main{
+position: relative;
+>::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 94px;
+    background-color: #2cb1e6;
+    top: -10px;
+    z-index: -1;
+}
+ .user_profile_img{
+     .usr_p_img{
+        width: 165px;
+        clip-path: circle();
+        img{
+            width:100%;
+        }
+     }
+     .usr_detais{
+         text-align: center;
+         margin-top: 10px;
+         .ttle{
+             font-size: 1.2em;
+         }
+         .ttle_2{
+             color: #a3a3a3;
+         }
+         .ttle_3{
+                color: #a3a3a3;
+                margin-top: 10px;
+             svg{
+                 color: #2cb1e6;
+                 margin-right: 5px;
+             }
+         }
+     }
+ }
+ .user_name{
+    font-size: x-large;
+    position: relative;
+    color: #fff;
+ }
+ .emp_frm_tab{
+    text-transform: capitalize;
+    padding: 5px 10px;
+    min-width: auto;
+    color: #fff;
+    >.Mui-selected{
+        color: #fff;
+    }
+ }
+    .emp_frm_tab_cnt{
+        padding: 10px 11px;
+        section{
+            box-shadow: 0px 0px 5px #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            header{
+                position: relative;
+                padding: 10px 10px;
+                button{
+                    // display: none;
+                    position: absolute;
+                    right: 10px;
+                    border: 0px;
+                    top: 10px;
+                    background: transparent;
+                    color: #747474;
+                    &:hover{
+                        color: #2cb1e6;
+                    }
+                }
+            }
+            &:hover>header>button{
+                display: block;
+            }
+            .emp_frm_tab_cnt_val{
+                padding-bottom: 10px;
+                text-align: left;
+                label{
+                    margin-top: 10px;
+                }
+                .margin_0{
+                    margin: 0;
+                }
+                p{
+                    margin: 0px;
+                    color: #7c7c7c;
+                    font-size: .9em;
+                }
+                input, textarea, select{
+                    // margin-bottom: 15px;
+                    padding: 0px 0px;
+                    border-radius: 5px;
+                    width: 100%;
+                    border: 0px;
+                    border-bottom: 1px solid #e7e7e7;
+                    box-shadow: none !important;
+                    color: inherit;
+                }
+                input[type=radio]{
+                    width: auto;
+                }
+                Input::after{
+                    border: 0px;
+                    border-bottom: 2px solid #ddd;
+                }
+                // .MuiInput-root{
+                //     margin-top: 10px;
+                // }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.org_div_main{
+        display: flex;
+        margin: 10px 0;
+    >div{
+        display: flex;
+        border: 1px solid #bbb;
+        border-radius: 15px;
+        margin: auto;
+        color: #6a6a6a;
+        div{
+            display: block;
+        }
+        .org_img{
+            width: 150px;
+            padding: 15px;
+            img{
+                width: 100%;
+            }
+        }
+        .org_contnt{
+            width: 350px;
+            padding: 15px;
+            .hding{
+                font-size: 1.05rem;
+                font-weight: bold;
+            }
+            .org_crted{
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+        }
+        .org_bt{
+            padding: 15px;
+            button{
+                padding:5px;
+                border:1px solid #1face4;
+                border-radius: 5px;
+                background-color: #fff;
+                color: #1face4;
+            }
+        }
+    }
+}
